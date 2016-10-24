@@ -6,12 +6,32 @@
 //  Copyright © 2016 Mohsin Farooqui. All rights reserved.
 //
 
+
+void sumofodds();
+
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+    sumofodds();
     }
     return 0;
+}
+
+void sumofodds()
+{
+    int i,a=0;
+    for(i=0;i<=10;i++)
+    {
+        if(i%2!=0)
+            
+        {
+            printf("The odd numbers is %d\n",i);
+            a=a+i;
+        }
+        
+    }
+    
+    printf("The addition of odd numbers is %d\n",a);
 }
